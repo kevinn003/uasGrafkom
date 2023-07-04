@@ -698,6 +698,23 @@ public class Main {
         ));
         lightbulb.get(0).getChildObject().get(2).translateObject(-17.07f, 1.3f, 15.085f);
 
+        lightbulb.get(0).getChildObject().add(new Sphere(Arrays.asList(
+                new ShaderProgram.ShaderModuleData(
+                        "resources/shaders/scene.vert", GL_VERTEX_SHADER),
+                new ShaderProgram.ShaderModuleData("resources/shaders/scene.frag", GL_FRAGMENT_SHADER)
+        ),
+                new ArrayList<>(
+                        List.of(
+                        )
+                ),
+                new Vector4f(1.0f, 1.0f, 1.0f, 1.0f),
+                Arrays.asList(0f, 0f, 0f),
+                0.14f,
+                0.14f,
+                0.14f, 36,
+                18, 2
+        ));
+        lightbulb.get(0).getChildObject().get(3).translateObject(-10.9f, 1.3f, 3.9f);
 
         kepala.add(new Sphere(Arrays.asList(
                 new ShaderProgram.ShaderModuleData(
@@ -2996,23 +3013,314 @@ public class Main {
             new Vector3f(5.1f, 0.0f, 6.0f),
             new Vector3f(5.3f, 0.0f, 6.3f),
             new Vector3f(5.2f, 0.0f, 6.1f),
+            new Vector3f(5.0f, 0.0f, 6.0f),
+            new Vector3f(0.29f, 0.0f, 9.3f),
             new Vector3f(-1.38f, 0.0f, 14.4f),
             new Vector3f(-1.48f, 0.0f, 14.4f),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            new Vector3f(-4.2f, 0.0f, -4.0f),
+            new Vector3f(-4.2f, 0.0f, 1.7f),
+            new Vector3f(-4.2f, 0.0f, 1.6f),
+            new Vector3f(-4.2f, 0.0f, 1.5f),
+            new Vector3f(-4.2f, 0.0f, 1.4f),
+            new Vector3f(-4.2f, 0.0f, 1.3f),
+            new Vector3f(-4.2f, 0.0f, 1.2f),
+            new Vector3f(-4.2f, 0.0f, 1.1f),
+            new Vector3f(-4.2f, 0.0f, 1.0f),
+            new Vector3f(-4.2f, 0.0f, 0.9f),
+            new Vector3f(-4.2f, 0.0f, 0.8f),
+            new Vector3f(-4.2f, 0.0f, 0.7f),
+            new Vector3f(-4.2f, 0.0f, 0.6f),
+            new Vector3f(-4.2f, 0.0f, 0.5f),
+            new Vector3f(-4.2f, 0.0f, 0.4f),
+            new Vector3f(-4.2f, 0.0f, 0.3f),
+            new Vector3f(-4.2f, 0.0f, 0.2f),
+            new Vector3f(-4.2f, 0.0f, 0.1f),
+            new Vector3f(-4.2f, 0.0f, 0.0f),
+            new Vector3f(-4.2f, 0.0f, -0.1f),
+            new Vector3f(-4.2f, 0.0f, -0.2f),
+            new Vector3f(-4.2f, 0.0f, -0.3f),
+            new Vector3f(-4.2f, 0.0f, -0.4f),
+            new Vector3f(-4.2f, 0.0f, -0.5f),
+            new Vector3f(-4.2f, 0.0f, -0.6f),
+            new Vector3f(-4.2f, 0.0f, -0.7f),
+            new Vector3f(-4.2f, 0.0f, -0.8f),
+            new Vector3f(-4.2f, 0.0f, -0.9f),
+            new Vector3f(-4.2f, 0.0f, -1.0f),
+            new Vector3f(-4.2f, 0.0f, -1.1f),
+            new Vector3f(-4.2f, 0.0f, -1.2f),
+            new Vector3f(-4.2f, 0.0f, -1.3f),
+            new Vector3f(-4.2f, 0.0f, -1.4f),
+            new Vector3f(-4.2f, 0.0f, -1.5f),
+            new Vector3f(-4.2f, 0.0f, -1.6f),
+            new Vector3f(-4.2f, 0.0f, -1.7f),
+            new Vector3f(-4.2f, 0.0f, -1.8f),
+            new Vector3f(-4.2f, 0.0f, -1.9f),
+            new Vector3f(-4.2f, 0.0f, -2.0f),
+            new Vector3f(-4.2f, 0.0f, -2.1f),
+            new Vector3f(-4.2f, 0.0f, -2.2f),
+            new Vector3f(-4.2f, 0.0f, -2.3f),
+            new Vector3f(-4.2f, 0.0f, -2.4f),
+            new Vector3f(-4.2f, 0.0f, -2.5f),
+            new Vector3f(-4.2f, 0.0f, -2.6f),
+            new Vector3f(-4.2f, 0.0f, -2.7f),
+            new Vector3f(-4.2f, 0.0f, -2.8f),
+            new Vector3f(-4.2f, 0.0f, -2.9f),
+            new Vector3f(-4.2f, 0.0f, -3.0f),
+            new Vector3f(-4.2f, 0.0f, -3.1f),
+            new Vector3f(-4.2f, 0.0f, -3.2f),
+            new Vector3f(-4.2f, 0.0f, -3.3f),
+            new Vector3f(-4.2f, 0.0f, -3.4f),
+            new Vector3f(-4.2f, 0.0f, 5.8f),
+            new Vector3f(-4.2f, 0.0f, 5.7f),
+            new Vector3f(-4.2f, 0.0f, 5.6f),
+            new Vector3f(-4.2f, 0.0f, 5.5f),
+            new Vector3f(-4.2f, 0.0f, 5.4f),
+            new Vector3f(-4.2f, 0.0f, 5.3f),
+            new Vector3f(-4.2f, 0.0f, 5.2f),
+            new Vector3f(-4.2f, 0.0f, 5.1f),
+            new Vector3f(-4.2f, 0.0f, 5.0f),
+            new Vector3f(-4.2f, 0.0f, 4.9f),
+            new Vector3f(-4.2f, 0.0f, 4.7f),
+            new Vector3f(-4.2f, 0.0f, 4.8f),
+            new Vector3f(-4.2f, 0.0f, 4.6f),
+            new Vector3f(-4.2f, 0.0f, 4.5f),
+            new Vector3f(-4.2f, 0.0f, 4.4f),
+            new Vector3f(-4.2f, 0.0f, 4.3f),
+            new Vector3f(-4.2f, 0.0f, 4.2f),
+            new Vector3f(-4.2f, 0.0f, 4.1f),
+            new Vector3f(-4.2f, 0.0f, 4.0f),
+            new Vector3f(-4.2f, 0.0f, 3.9f),
+            new Vector3f(-4.2f, 0.0f, 3.8f),
+            new Vector3f(-4.2f, 0.0f, 3.7f),
+            new Vector3f(-4.2f, 0.0f, 3.6f),
+            new Vector3f(-4.2f, 0.0f, 3.5f),
+            new Vector3f(-4.2f, 0.0f, 3.4f),
+            new Vector3f(-4.2f, 0.0f, 3.3f),
+            new Vector3f(-4.2f, 0.0f, 3.2f),
+            new Vector3f(-4.2f, 0.0f, 3.1f),
+            new Vector3f(-4.2f, 0.0f, 3.0f),
+            new Vector3f(-4.2f, 0.0f, 2.9f),
+            new Vector3f(-4.2f, 0.0f, 2.8f),
+            new Vector3f(-4.2f, 0.0f, 2.7f),
+            new Vector3f(-4.2f, 0.0f, 2.6f),
+            new Vector3f(-4.2f, 0.0f, 2.5f),
+            new Vector3f(-4.2f, 0.0f, 2.4f),
+            new Vector3f(-4.2f, 0.0f, 2.3f),
+            new Vector3f(-4.2f, 0.0f, 2.2f),
+            new Vector3f(-4.2f, 0.0f, 2.1f),
+            new Vector3f(-4.2f, 0.0f, 2.0f),
+            new Vector3f(-4.2f, 0.0f, 1.9f),
+            new Vector3f(-4.2f, 0.0f, 1.8f),
+            new Vector3f(-4.2f, 0.0f, 1.7f),
+            new Vector3f(-4.2f, 0.0f, 1.6f),
+            new Vector3f(-4.2f, 0.0f, 1.5f),
+            new Vector3f(-4.2f, 0.0f, 1.4f),
+            new Vector3f(-4.2f, 0.0f, 1.3f),
+            new Vector3f(-4.2f, 0.0f, 1.2f),
+            new Vector3f(-4.2f, 0.0f, 1.1f),
+            new Vector3f(-4.2f, 0.0f, 1.0f),
+            new Vector3f(-4.2f, 0.0f, 5.9f),
+            new Vector3f(-4.2f, 0.0f, 6.0f),
+            new Vector3f(-4.2f, 0.0f, 6.1f),
+            new Vector3f(-4.2f, 0.0f, 6.2f),
+            new Vector3f(-4.2f, 0.0f, 6.3f),
+            new Vector3f(-4.2f, 0.0f, 6.4f),
+            new Vector3f(-4.2f, 0.0f, 6.5f),
+            new Vector3f(-4.2f, 0.0f, 6.6f),
+            new Vector3f(-4.2f, 0.0f, 6.7f),
+            new Vector3f(-4.2f, 0.0f, 6.8f),
+            new Vector3f(-4.2f, 0.0f, 6.9f),
+            new Vector3f(-4.2f, 0.0f, 7.0f),
+            new Vector3f(-4.2f, 0.0f, 7.1f),
+            new Vector3f(-4.2f, 0.0f, 7.2f),
+            new Vector3f(-4.2f, 0.0f, 7.3f),
+            new Vector3f(-4.2f, 0.0f, 7.4f),
+            new Vector3f(-4.2f, 0.0f, 7.5f),
+            new Vector3f(-4.2f, 0.0f, 7.6f),
+            new Vector3f(-4.2f, 0.0f, 7.7f),
+            new Vector3f(-4.2f, 0.0f, 7.8f),
+            new Vector3f(-4.2f, 0.0f, 7.9f),
+            new Vector3f(-4.2f, 0.0f, 8.0f),
+            new Vector3f(-4.2f, 0.0f, 8.1f),
+            new Vector3f(-4.2f, 0.0f, 8.2f),
+            new Vector3f(-4.2f, 0.0f, 8.3f),
+            new Vector3f(-4.2f, 0.0f, 8.4f),
+            new Vector3f(-4.2f, 0.0f, 8.5f),
+            new Vector3f(-4.2f, 0.0f, 8.6f),
+            new Vector3f(-4.2f, 0.0f, 8.7f),
+            new Vector3f(-4.2f, 0.0f, 8.8f),
+            new Vector3f(-4.2f, 0.0f, 8.9f),
+            new Vector3f(-4.2f, 0.0f, 9.0f),
+            new Vector3f(-4.2f, 0.0f, 9.1f),
+            new Vector3f(-4.2f, 0.0f, 9.2f),
+            new Vector3f(-4.2f, 0.0f, 9.3f),
+            new Vector3f(-4.2f, 0.0f, 9.4f),
+            new Vector3f(-4.2f, 0.0f, 9.5f),
+            new Vector3f(-4.2f, 0.0f, 9.6f),
+            new Vector3f(-4.2f, 0.0f, 9.7f),
+            new Vector3f(-4.2f, 0.0f, 9.8f),
+            new Vector3f(-4.2f, 0.0f, 9.9f),
+            new Vector3f(-4.2f, 0.0f, 10.0f),
+            new Vector3f(-4.2f, 0.0f, 10.1f),
+            new Vector3f(-4.2f, 0.0f, 10.2f),
+            new Vector3f(-4.2f, 0.0f, 10.3f),
+            new Vector3f(-4.2f, 0.0f, 10.4f),
+            new Vector3f(-4.2f, 0.0f, 10.5f),
+            new Vector3f(-4.2f, 0.0f, 10.6f),
+            new Vector3f(-4.2f, 0.0f, 10.7f),
+            new Vector3f(-4.2f, 0.0f, 10.8f),
+            new Vector3f(-4.2f, 0.0f, 10.9f),
+            new Vector3f(-4.2f, 0.0f, 11.0f),
+            new Vector3f(-4.2f, 0.0f, 11.1f),
+            new Vector3f(-4.2f, 0.0f, 11.2f),
+            new Vector3f(-4.2f, 0.0f, 11.3f),
+            new Vector3f(-1.48f, 0.0f, 14.4f),
+            new Vector3f(-4.2f, 0.0f, 5.9f),
+            new Vector3f(-4.1f, 0.0f, 5.9f),
+            new Vector3f(-4.0f, 0.0f, 5.9f),
+            new Vector3f(-3.9f, 0.0f, 5.9f),
+            new Vector3f(-3.8f, 0.0f, 5.9f),
+//            new Vector3f(-3.7f, 0.0f, 5.9f),
+            new Vector3f(-3.6f, 0.0f, 5.9f),
+            new Vector3f(6.5f, 0.0f, 5.8f),
+            new Vector3f(6.5f, 0.0f, 5.7f),
+            new Vector3f(6.5f, 0.0f, 5.6f),
+            new Vector3f(6.5f, 0.0f, 5.5f),
+            new Vector3f(6.5f, 0.0f, 5.4f),
+            new Vector3f(6.5f, 0.0f, 5.3f),
+            new Vector3f(6.5f, 0.0f, 5.2f),
+            new Vector3f(6.5f, 0.0f, 5.1f),
+            new Vector3f(6.5f, 0.0f, 5.0f),
+            new Vector3f(6.5f, 0.0f, 4.9f),
+            new Vector3f(6.5f, 0.0f, 4.8f),
+            new Vector3f(6.5f, 0.0f, 4.7f),
+            new Vector3f(6.5f, 0.0f, 4.6f),
+            new Vector3f(6.5f, 0.0f, 4.5f),
+            new Vector3f(6.5f, 0.0f, 4.4f),
+            new Vector3f(6.5f, 0.0f, 4.3f),
+            new Vector3f(6.5f, 0.0f, 4.2f),
+            new Vector3f(6.5f, 0.0f, 4.1f),
+            new Vector3f(6.5f, 0.0f, 4.0f),
+            new Vector3f(6.5f, 0.0f, 3.9f),
+            new Vector3f(6.5f, 0.0f, 3.8f),
+            new Vector3f(6.5f, 0.0f, 3.7f),
+            new Vector3f(6.5f, 0.0f, 3.6f),
+            new Vector3f(6.5f, 0.0f, 3.5f),
+            new Vector3f(6.5f, 0.0f, 3.4f),
+            new Vector3f(6.5f, 0.0f, 3.3f),
+            new Vector3f(6.4f, 0.0f, 2.6f),
+            new Vector3f(6.2f, 0.0f, 2.6f),
+            new Vector3f(6.3f, 0.0f, 2.6f),
+            new Vector3f(6.1f, 0.0f, 2.6f),
+            new Vector3f(6.0f, 0.0f, 2.6f),
+            new Vector3f(5.9f, 0.0f, 2.6f),
+            new Vector3f(-3.99f, 0.0f, 16.1f),
+            new Vector3f(-3.89f, 0.0f, 16.1f),
+            new Vector3f(-3.79f, 0.0f, 16.1f),
+            new Vector3f(-3.69f, 0.0f, 16.1f),
+            new Vector3f(-3.59f, 0.0f, 16.1f),
+            new Vector3f(-3.49f, 0.0f, 16.1f),
+            new Vector3f(-3.39f, 0.0f, 16.1f),
+            new Vector3f(-3.29f, 0.0f, 16.1f),
+            new Vector3f(-3.19f, 0.0f, 16.1f),
+            new Vector3f(-3.09f, 0.0f, 16.1f),
+            new Vector3f(-4.09f, 0.0f, 16.1f),
+            new Vector3f(-4.19f, 0.0f, 16.1f),
+            new Vector3f(-4.29f, 0.0f, 16.1f),
+            new Vector3f(-4.39f, 0.0f, 16.1f),
+            new Vector3f(-4.49f, 0.0f, 16.1f),
+            new Vector3f(-4.59f, 0.0f, 16.1f),
+            new Vector3f(-4.69f, 0.0f, 16.1f),
+            new Vector3f(-4.79f, 0.0f, 16.1f),
+            new Vector3f(-2.99f, 0.0f, 16.1f),
+            new Vector3f(-2.89f, 0.0f, 16.1f),
+            new Vector3f(-2.79f, 0.0f, 16.1f),
+            new Vector3f(-2.69f, 0.0f, 16.1f),
+            new Vector3f(-2.59f, 0.0f, 16.1f),
+            new Vector3f(-2.49f, 0.0f, 16.1f),
+            new Vector3f(-2.39f, 0.0f, 16.1f),
+            new Vector3f(-2.29f, 0.0f, 16.1f),
+            new Vector3f(-2.19f, 0.0f, 16.1f),
+            new Vector3f(-2.09f, 0.0f, 16.1f),
+            new Vector3f(0.2f, 0.0f, 16.1f),
+            new Vector3f(0.2f, 0.0f, 16.0f),
+            new Vector3f(0.2f, 0.0f, 15.9f),
+            new Vector3f(0.2f, 0.0f, 15.8f),
+            new Vector3f(0.2f, 0.0f, 15.7f),
+            new Vector3f(0.2f, 0.0f, 15.6f),
+            new Vector3f(0.2f, 0.0f, 15.5f),
+            new Vector3f(0.2f, 0.0f, 15.4f),
+            new Vector3f(0.2f, 0.0f, 15.3f),
+            new Vector3f(0.2f, 0.0f, 15.2f),
+            new Vector3f(0.2f, 0.0f, 15.1f),
+            new Vector3f(0.2f, 0.0f, 15.0f),
+            new Vector3f(0.2f, 0.0f, 14.9f),
+            new Vector3f(0.2f, 0.0f, 14.8f),
+            new Vector3f(0.2f, 0.0f, 14.7f),
+            new Vector3f(0.2f, 0.0f, 14.6f),
+            new Vector3f(0.2f, 0.0f, 14.5f),
+            new Vector3f(0.2f, 0.0f, 14.4f),
+            new Vector3f(-0.9f, 0.0f, 16.0f),
+            new Vector3f(-0.8f, 0.0f, 16.0f),
+            new Vector3f(-0.7f, 0.0f, 16.0f),
+            new Vector3f(-0.6f, 0.0f, 16.0f),
+            new Vector3f(-0.5f, 0.0f, 16.0f),
+            new Vector3f(-0.4f, 0.0f, 16.0f),
+            new Vector3f(-0.3f, 0.0f, 16.0f),
+            new Vector3f(-0.2f, 0.0f, 16.0f),
+            new Vector3f(-0.1f, 0.0f, 16.0f),
+            new Vector3f(-1.0f, 0.0f, 16.0f),
+            new Vector3f(-1.1f, 0.0f, 16.0f),
+            new Vector3f(-1.2f, 0.0f, 16.0f),
+            new Vector3f(-1.3f, 0.0f, 16.0f),
+            new Vector3f(-1.4f, 0.0f, 16.0f),
+            new Vector3f(-7.59f, 0.0f, 16.0f),
+            new Vector3f(-7.59f, 0.0f, 15.9f),
+            new Vector3f(-7.59f, 0.0f, 15.8f),
+            new Vector3f(-7.59f, 0.0f, 15.7f),
+            new Vector3f(-7.59f, 0.0f, 15.6f),
+            new Vector3f(-7.59f, 0.0f, 15.5f),
+            new Vector3f(-7.59f, 0.0f, 15.4f),
+            new Vector3f(-7.59f, 0.0f, 15.3f),
+            new Vector3f(-7.59f, 0.0f, 15.2f),
+            new Vector3f(-7.59f, 0.0f, 15.1f),
+            new Vector3f(-7.59f, 0.0f, 15.0f),
+            new Vector3f(-7.59f, 0.0f, 16.0f),
+            new Vector3f(-4.099f, 0.0f, -5.89f),
+            new Vector3f(6.5f, 0.0f, -5.59f),
+            new Vector3f(6.5f, 0.0f, -5.49f),
+            new Vector3f(6.5f, 0.0f, -5.39f),
+            new Vector3f(6.5f, 0.0f, -5.29f),
+            new Vector3f(6.5f, 0.0f, -5.19f),
+            new Vector3f(6.5f, 0.0f, -5.09f),
+            new Vector3f(6.5f, 0.0f, -4.99f),
+            new Vector3f(6.5f, 0.0f, -4.89f),
+            new Vector3f(6.5f, 0.0f, -4.79f),
+            new Vector3f(6.5f, 0.0f, -4.69f),
+            new Vector3f(6.5f, 0.0f, -4.59f),
+            new Vector3f(6.5f, 0.0f, -4.49f),
+            new Vector3f(6.5f, 0.0f, -4.39f),
+            new Vector3f(6.5f, 0.0f, -4.29f),
+            new Vector3f(6.5f, 0.0f, -4.19f),
+            new Vector3f(6.5f, 0.0f, -4.09f),
+            new Vector3f(6.5f, 0.0f, -3.99f),
+            new Vector3f(6.5f, 0.0f, -3.89f),
+            new Vector3f(6.5f, 0.0f, -3.79f),
+            new Vector3f(6.5f, 0.0f, -3.69f),
+            new Vector3f(6.5f, 0.0f, -3.59f),
+            new Vector3f(6.5f, 0.0f, -3.49f),
+            new Vector3f(6.5f, 0.0f, -3.39f),
+            new Vector3f(6.5f, 0.0f, -3.29f),
+            new Vector3f(6.5f, 0.0f, -3.19f),
+            new Vector3f(-11.6f, 0.0f, 1.5f),
+            new Vector3f(-11.5f, 0.0f, 1.5f),
+            new Vector3f(-11.4f, 0.0f, 1.5f),
+            new Vector3f(-11.3f, 0.0f, 1.5f),
+            new Vector3f(-11.2f, 0.0f, 1.5f),
+            new Vector3f(-11.1f, 0.0f, 1.5f),
+            new Vector3f(-11.0f, 0.0f, 1.5f),
+            new Vector3f(-10.9f, 0.0f, 1.5f),
+            new Vector3f(-10.8f, 0.0f, 1.5f),
 
 
 
@@ -3024,21 +3332,15 @@ public class Main {
             new Vector3f(13.6f, 0.0f, 15.3f),
             new Vector3f(14.8f, 0.0f, 14.0f)
 
+
     );
 
     boolean collision_detection(float posx, float posy, float posz) {
         if (window.isKeyPressed(GLFW_KEY_SPACE)) {
             return false;
         }
-//        if (v3R(posx, posy, posz, kepala.get(0).getCenterPoint().get(0), kepala.get(0).getCenterPoint().get(0),kepala.get(0).getCenterPoint().get(0)) < 0.3f){
-//            return true;
-//        }
-//        if (cameray,.getPosition().get(0) >= -4.7f && camera.getPosition().get(0) <= -4f && camera.getPosition().get(2) >= -0.45f && camera.getPosition().get(2) <= -0.4f){
-//            return true;
-//        }
 
-        for (Vector3f e :
-                collisionPoint)  {
+        for (Vector3f e : collisionPoint)  {
             if (v3R(posx, posy, posz, e.get(0), e.get(1), e.get(2)) < 0.05f){
                 return true;
             }
@@ -3128,7 +3430,7 @@ public class Main {
                 }
                 camera.setPosition(kepala.get(0).getCenterPoint().get(0), kepala.get(0).getCenterPoint().get(1) + 5f, kepala.get(0).getCenterPoint().get(2));
                 camera.setRotation(1.5f, 0f, 0f);
-                System.out.println(kepala.get(0).getCenterPoint());
+//                System.out.println(kepala.get(0).getCenterPoint());
             }
             if (window.isKeyPressed(GLFW_KEY_S) && !collision_detection(posx, posy, posz)) {
 //            camera.moveForward(0.1f);
@@ -3141,7 +3443,7 @@ public class Main {
                 }
                 camera.setPosition(kepala.get(0).getCenterPoint().get(0), kepala.get(0).getCenterPoint().get(1) + 5f, kepala.get(0).getCenterPoint().get(2));
                 camera.setRotation(1.5f, 0f, 0f);
-                System.out.println(kepala.get(0).getCenterPoint());
+//                System.out.println(kepala.get(0).getCenterPoint());
             }
             if (window.isKeyPressed(GLFW_KEY_A) && !collision_detection(posx, posy, posz)) {
                 camera.setPosition(kepala.get(0).getCenterPoint().get(0), kepala.get(0).getCenterPoint().get(1) + 5f, kepala.get(0).getCenterPoint().get(2));
@@ -3152,7 +3454,7 @@ public class Main {
                 }
                 camera.setPosition(kepala.get(0).getCenterPoint().get(0), kepala.get(0).getCenterPoint().get(1) + 5f, kepala.get(0).getCenterPoint().get(2));
                 camera.setRotation(1.5f, 0f, 0f);
-                System.out.println(kepala.get(0).getCenterPoint());
+//                System.out.println(kepala.get(0).getCenterPoint());
 
             }
             if (window.isKeyPressed(GLFW_KEY_D) && !collision_detection(posx, posy, posz)) {
@@ -3165,7 +3467,7 @@ public class Main {
 
                 camera.setPosition(kepala.get(0).getCenterPoint().get(0), kepala.get(0).getCenterPoint().get(1) + 5f, kepala.get(0).getCenterPoint().get(2));
                 camera.setRotation(1.5f, 0f, 0f);
-                System.out.println(kepala.get(0).getCenterPoint());
+//                System.out.println(kepala.get(0).getCenterPoint());
             }
         }
         if (window.isKeyPressed(GLFW_KEY_Q)) {
